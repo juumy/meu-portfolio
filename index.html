@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Júlia Marques</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#qualificacoes">Qualificações</a></li>
+            <li><a href="#experiencias">Experiências</a></li>
+        </ul>
+        <div class="theme-toggle">
+          <button id="themeToggle">
+            <i class="fa-solid fa-sun" id="sun-icon" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-moon" id="moon-icon" style="color: #ffffff; display: none;"></i>
+        </button>
+        </div>
+    </nav>
+</header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <div class="avatar"></div>
+            <div class="apresentacao">
+                Olá, sou<br>
+                <span class="highlight">Júlia Marques</span>,<br>
+                <span id="dynamic-text"></span>
+            </div>
+        </div>
+        <p>Sou especialista em desenvolver websites que combinam eficiência, design atrativo e estratégias focadas em conversão, criando experiências digitais impactantes e de alto desempenho.</p>
+        <div>
+            <a href="https://drive.google.com/drive/u/0/folders/1iqHth7pXdrM8r4vSKKP01IhE_q1KEZcu" target="_blank" class="btn">Ver CV ↗</a>
+            <a href="https://www.linkedin.com/in/julia-m-silva/" target="_blank" class="btn">LinkedIn ↗</a>
+            <a href="mailto:juh.m.soft@gmail.com" target="_blank" class="btn">E-mail ↗</a>
+            <a href="https://github.com/juumy" target="_blank" class="btn">GitHub ↗</a>
+        </div>
+    </section>
+    
+
+    <section class="skills">
+      <div class="subtitulo">Habilidades</div>
+      <div class="skills-container" style="display: flex;">
+        <!-- Front-End -->
+        <div class="skill-group">
+          <h2>Front-End</h2>
+          <span><img src="img/apps/javascript.png" alt="JavaScript" class="icone">JavaScript</span>
+          <span><img src="img/apps/html.png" alt="HTML" class="icone">HTML</span>
+          <span><img src="img/apps/css.png" alt="CSS" class="icone">CSS</span>
+          <span><img src="img/apps/react.png" alt="React.js" class="icone">React.js</span>
+          <span><img src="img/apps/angular.png" alt="Angular" class="icone">Angular</span>
+          <span><img src="img/apps/bootstrap.png" alt="Bootstrap" class="icone">Bootstrap</span>
+        </div>
+    
+        <!-- Back-End -->
+        <div class="skill-group">
+          <h2>Back-End</h2>
+          <span><img src="img/apps/php.png" alt="PHP" class="icone">PHP</span>
+          <span><img src="img/apps/c.png" alt="C++" class="icone">C++</span>
+          <span><img src="img/apps/java.png" alt="Java" class="icone">Java</span>
+          <span><img src="img/apps/python.png" alt="Python" class="icone">Python</span>
+          <span><img src="img/apps/sql.png" alt="SQL" class="icone">SQL</span>
+        </div>
+    
+        <!-- CMS -->
+        <div class="skill-group">
+          <h2>CMS</h2>
+          <span><img src="img/apps/wordpress.png" alt="WordPress" class="icone">WordPress</span>
+          <span><img src="img/apps/wix.png" alt="Wix" class="icone">Wix</span>
+          <span><img src="img/apps/bubble.png" alt="Bubble" class="icone">Bubble</span>
+          <span><img src="img/apps/flutter.png" alt="Flutter Flow" class="icone">Flutter Flow</span>
+          <span><img src="img/apps/joomla.png" alt="Joomla" class="icone">Joomla</span>
+        </div>
+        
+        <!-- Design -->
+        <div class="skill-group">
+          <h2>Design e Edição</h2>
+          <span><img src="img/apps/figma.png" alt="Figma" class="icone">Figma</span>
+          <span><img src="img/apps/ps.png" alt="Photoshop" class="icone">Photoshop</span>
+          <span><img src="img/apps/ai.png" alt="Illustrator" class="icone">Illustrator</span>
+          <span><img src="img/apps/canva.png" alt="Canva" class="icone">Canva</span>
+          <span><img src="img/apps/capcut.png" alt="CapCut" class="icone">CapCut</span>
+          <span><img src="img/apps/filmora.png" alt="Filmora" class="icone">Filmora</span>
+          <span><img src="img/apps/obs.png" alt="OBS Studio" class="icone">OBS Studio</span>
+        </div>
+
+        <!-- Banco de Dados -->
+        <div class="skill-group">
+          <h2>Banco de Dados</h2>
+          <span><img src="img/apps/mysql.png" alt="MySQL" class="icone">MySQL</span>
+          <span><img src="img/apps/postgre.png" alt="PostgreSQL" class="icone">PostgreSQL</span>
+        </div>
+
+        <!-- Banco de Dados -->
+        <div class="skill-group">
+          <h2>Versionamento e Colaboração</h2>
+          <span><img src="img/apps/git.png" alt="Git" class="icone">Git</span>
+          <span><img src="img/apps/github.png" alt="GitHub" class="icone">GitHub</span>
+          <span><img src="img/apps/trello.png" alt="Trello" class="icone">Trello</span>
+        </div>
+
+      </div>
+    </section>
+    
+
+    <section class="projects" id="projetos">
+        <div class="subtitulo">Projetos</div>
+        
+       <!-- Caixa de pesquisa -->
+        <input
+        type="text"
+        id="search-box"
+        class="search-box"
+        placeholder="Busque por projetos"
+        />
+
+        <!-- Caixa de seleção -->
+        <select id="category-select" class="category-select">
+  <option value="all">Todos os projetos</option>
+  <option value="design">Design</option>
+  <option value="web design">Web Design</option>
+  <option value="ux-ui">UX/UI Design</option>
+</select>
+
+        <div class="projects-container">
+          <p id="no-results-message" class="hidden">Ops! Ainda não tenho nenhum resultado para sua pesquisa.</p>
+          <!-- Card 1 -->
+          <div class="project-card" data-category="ux-ui">
+            <img src="img/projetos/portfolio.png" alt="Agência de Viagens" class="img-projeto" />
+            <p class="titulo-sec">Portfólio</p>
+            <p class="text-card">
+              Portfólio online com design que remete à tecnologia. Combina estética inovadora com funcionalidade, destacando os projetos de forma impactante.
+            </p>
+            <div class="card-footer">
+              <div class="circle-icon">
+                <a href="https://www.figma.com/design/YekP05AT6RMDz7mJabr2IP/Portfolio-(Community)?node-id=302-8485&t=4wKtR3nJiNu1vAWM-1" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-figma" style="color: #ffffff;"></i>
+                </a>
+              </div>
+              <p class="classificacao">UX/UI Desgin</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="project-card" data-category="web design">
+            <img src="img/projetos/site_viagem.png" alt="Página de Agência de Viagem" class="img-projeto" />
+            <p class="titulo-sec">Agência de Viagens</p>
+            <p class="text-card">
+              Página de web design desenvolvida para projeto acadêmico, representando uma agência de viagens fictícia, com foco em design responsivo e navegabilidade.
+            </p>
+            <div class="card-footer">
+              <div class="circle-icon">
+                <a href="https://github.com/juumy/Projeto_AgenciaViagem" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                </a>
+              </div>
+              <p class="classificacao">Web Design</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="project-card" data-category="design">
+            <img src="img/projetos/aura_glow.png" alt="Aura Glow" class="img-projeto" />
+            <p class="titulo-sec">Aura Glow</p>
+            <p class="text-card">
+              Identidade visual e social media para "Aura Glow", marca fictícia de cosméticos veganos de skincare. Design clean, natural e alinhado aos valores da marca. 🌿✨
+            </p>
+            <div class="card-footer">
+              <div class="circle-icon">
+                <a href="https://www.behance.net/gallery/216301973/Aura-Glow-Visual-Identity-Social-Media" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+              <p class="classificacao">Design</p>
+            </div>
+          </div>
+      
+          <!-- Card 4 -->
+          <div class="project-card" data-category="design">
+            <img src="img/projetos/pet_amigos.png" alt="Pet Amigos" class="img-projeto" />
+            <p class="titulo-sec">Pet Amigos</p>
+            <p class="text-card">
+              Identidade visual e social media para "Pet Amigos", marca fictícia de pet shop. Design reforça a conexão especial entre humanos e animais. 🐶💕
+            </p>
+            <div class="card-footer">
+              <div class="circle-icon">
+                <a href="https://www.behance.net/gallery/214550941/Pet-Amigos" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+              <p class="classificacao">Design</p>
+            </div>
+          </div>
+      
+          <!-- Card 5 -->
+          <div class="project-card" data-category="design">
+            <img src="img/projetos/restaurante_japones.png" alt="Restaurante Japonês" class="img-projeto" />
+            <p class="titulo-sec">Restaurante Japonês</p>
+            <p class="text-card">
+              Social media para restaurante japonês fictício. Design elegante e minimalista, inspirado na cultura japonesa, com foco na sofisticação da culinária oriental. 🍣🥢
+            </p>
+            <div class="card-footer">
+              <div class="circle-icon">
+                <a href="https://www.behance.net/gallery/216342183/Social-Media-Restaurante-Japones" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+              <p class="classificacao">Design</p>
+            </div>
+          </div>
+
+           <!-- Card 6 -->
+           
+      
+          <!-- Card 7 -->
+          <div class="project-card" data-category="design">
+            <img src="img/projetos/loja_bicicleta.png" alt="Loja de Bicicletas" class="img-projeto" />
+            <p class="titulo-sec">Loja de Bicicletas</p>
+            <p class="text-card">
+              Social media para loja de bicicletas e acessórios fictícia. Design dinâmico, focado em transmitir a energia e a liberdade do universo das pedaladas. 🚲💚
+            </p>
+            <div class="card-footer">
+              <div class="circle-icon">
+                <a href="https://www.behance.net/gallery/216359301/Social-Media-Loja-de-Bicicleta" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+              <p class="classificacao">Design</p>
+            </div>
+          </div>
+      
+          <!-- Card 8 
+          <div class="project-card" data-category="design">
+            <img src="img/projetos/brew_coffee.png" alt="Brew & Coffee" class="img-projeto" />
+            <p class="titulo-sec">Brew & Coffee</p>
+            <p class="text-card">
+              Identidade visual e social media para "Brew & Coffee", marca fictícia especializada em cafés de qualidade. Design que transmite a experiência única de cada xícara. ☕🥐
+            </p>
+            <div class="card-footer">
+              <div class="circle-icon">
+                <i class="fa-brands fa-behance"></i>
+              </div>
+              <p class="classificacao">Design</p>
+            </div>
+          </div>-->
+
+           <!-- Card 9 -->
+           <div class="project-card" data-category="design">
+            <img src="img/projetos/agencia_viagem.png" alt="Agência de Viagens" class="img-projeto" />
+            <p class="titulo-sec">Agência de Viagens</p>
+            <p class="text-card">
+              Social media criado para uma agência de viagens fictícia. Design com foco em cores vibrantes e mensagens que inspiram aventuras pelo mundo. 🌍✈️
+            </p>
+            <div class="card-footer">
+              <div class="circle-icon">
+                <a href="https://www.behance.net/gallery/215299657/Social-Media-Agencia-de-Viagens" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+              </div>
+              <p class="classificacao">Design</p>
+            </div>
+          </div>
+        </div>
+        
+        <center>
+          <a href="#" class="btn" id="verMaisBtn">Ver mais</a>
+        </center>
+      </section>
+      
+
+    <section class="qualifications" id="qualificacoes">
+        <div class="qualifications-container">
+          <!-- Texto -->
+          <div class="qualifications-text">
+            <div class="subtitulo">Qualificações</div>
+            <p class="titulo-sec">Superior em Engenharia da Computação</p>
+            <p class="text-card">Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</p>
+            <p class="data">2023-2027</p>
+            <br>
+            <p class="titulo-sec">Superior em Análise e Desenvolvimento de Sistemas</p>
+            <p class="text-card">Faculdade Anhanguera</p>
+            <p class="data">2023-2025</p>
+            <br>
+            <p class="titulo-sec">Curso Técnico em Desenvolvimento de Sistemas</p>
+            <p class="text-card">Colégio Serrano Guardia</p>
+            <p class="data">2020-2022</p>
+          </div>
+      
+          <!-- Imagem -->
+          <div class="qualifications-image">
+            <img src="img/certificados.png" alt="Imagem relacionada às qualificações" />
+            <center><a href="https://drive.google.com/drive/folders/1blidEgApIElhKOKp21Gg-0Ep_wDsd2Q8?usp=sharing" class="btn">Ver mais ↗</a></center>
+          </div>
+        </div>
+      </section>
+
+    <section class="experiences" id="experiencias">
+        <div class="subtitulo">Experiências</div>
+        <br>
+
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="content">
+                    <p class="titulo-sec">Estágio em Comunicação</p>
+                    <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</p>
+                    <div class="skills-container">
+                        <span>Figma</span>
+                        <span>Photoshop</span>
+                        <span>Canva</span>
+                        <span>Illustrator</span>
+                        <span>OBS Studio</span>
+                        <span>CapCut</span>
+                    </div>
+                </div>
+                <div class="time">
+                    <h4>2024-Presente</h4>
+                </div>
+            </li>
+            
+            <li>
+                <div class="content">
+                    <p class="titulo-sec">Estágio em Desenvolvimento de Soluções Digitais</p>
+                    <p>Colégio Serrano Guardia</p>
+                    <div class="skills-container">
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>SQL</span>
+                        <span>PostgreSQL</span>
+                        <span>PHP</span>
+                        <span>WordPress</span>
+                        <span>Wix</span>
+                        <span>Photoshop</span>
+                        <span>Canva</span>
+                    </div>
+                </div>
+                <div class="time">
+                    <h4>2022-2024</h4>
+                </div>
+            </li>
+        
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+
+</section>
+
+    <footer class="footer" id="contato">
+        <p>© 2025 Júlia Marques. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('themeToggle').addEventListener('click', function() {
+            console.log('Tema alterado');
+            document.body.classList.toggle('dark-theme');
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>

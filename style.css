@@ -1,0 +1,667 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", serif;
+    background-color: #000319;
+    color: #f8f8f2;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-bottom: 0.9rem;
+}
+
+.text-card {
+    font-size: 1rem;
+    color: #ffffff80;
+    margin: 1rem 0rem 1rem 0rem;
+    text-align: justify;
+}
+/* Estilos base */
+.header {
+    background: linear-gradient(101deg, #383943d4, #1b1c29cf);
+    padding: 1.5rem 4rem;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background 10s ease, box-shadow 10s ease;
+}
+
+.header:hover {
+    background: linear-gradient(-101deg, #383943d4, #1b1c29cf);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #9747FF;
+}
+
+#moon-icon {
+    display: none;
+}
+
+#sun-icon {
+    display: block;
+}
+
+.menu-toggle {
+    display: none; /* Esconde o botão em telas grandes */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: -12%;
+        background: #26293dde;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex; /* Exibe o menu quando ativo */
+    }
+}
+
+.theme-toggle {
+    margin-left: 2rem;
+}
+
+.theme-toggle button {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #f8f8f2;
+}
+
+/* Menu hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.4rem;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #f8f8f2;
+    transition: all 0.3s ease;
+}
+
+.nome {
+    font-size: 7rem;
+}
+
+.hero .highlight {
+    color: #9747FF;
+}
+
+/* Geral */
+.hero {
+    padding: 10rem 4rem 2rem 4rem; /* Ajusta o espaçamento em dispositivos menores */
+}
+
+.hero-content {
+    display: flex; /* Mantém o layout lado a lado por padrão */
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 0rem; /* Espaçamento entre o avatar e o texto */
+}
+
+.hero .avatar {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%; /* Garante que permaneça um círculo */
+    background-image: url('img/avatar.jpg');
+    background-position: center;
+    background-size: cover; /* Ajusta para caber sem cortar */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    margin-right: 8rem;
+}
+
+.apresentacao {
+    font-size: 4.5rem;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.btn {
+    display: inline-block;
+    margin: 1rem 0.5rem 0rem 0rem;
+    padding: 0.7rem 1.5rem;
+    color: #9747FF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-weight: bolder;
+    border: 2px solid #9747FF; 
+}
+
+.btn:hover {
+    background: #9747FF;
+    color: #f8f8f2;
+}
+
+.subtitulo {
+    font-size: 3rem;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    color: white;
+}
+
+.skills-container span {
+    display: inline-block;
+    margin: 0.8rem 0rem 0rem 0.3rem;
+    padding: 0.5rem 1rem;
+    background: #44475a;
+    border-radius: 5px;
+    color: #f8f8f2;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.titulo-sec {
+    margin: 1rem 0.5rem 0.8rem 0rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.project-card {
+    background: rgba(217, 217, 217, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    /*text-align: justify;*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.timeline-item {
+    background: #44475a;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #383a49;
+    color: #f8f8f2;
+}
+
+.dark-theme {
+    background-color: #282a36;
+    color: #f8f8f2;
+}
+
+.dark-theme .btn:hover {
+    background: #9747FF;
+}
+
+.icone {
+    width: 2rem;
+    vertical-align: middle;  /* Alinha a imagem com o meio do texto */
+    margin-right: 8px;  /* Espaço entre a imagem e o texto */
+}
+
+.img-projeto {
+    width: 100%;
+    max-height: 250px;
+}
+
+.classificacao {
+    font-size: 1rem;
+    color: #CBACF9;
+    text-align: right;
+}
+
+.data {
+    font-size: 1rem;
+    color: #CBACF9;
+}
+
+.circle-icon {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    width: 50px; /* Largura do círculo */
+    height: 50px; /* Altura do círculo */
+    background-color: #000319; /* Cor de fundo do círculo */
+    border-radius: 50%; /* Faz o elemento ficar redondo */
+    color: white; /* Cor do ícone */
+    font-size: 20px; /* Tamanho do ícone */
+  }
+
+  /* Estilo opcional para hover */
+  .circle-icon:hover {
+    background-color: #9747ff; /* Muda a cor de fundo ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave */
+  }
+
+  /* Estilo do container que engloba o ícone e o texto */
+  .card-footer {
+    display: flex; /* Organiza os elementos na mesma linha */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Um elemento em cada canto (esquerda e direita) */
+  }
+
+
+  /* Container principal */
+.qualifications-container {
+    display: flex; /* Organiza texto e imagem lado a lado */
+    gap: 20px; /* Espaço entre texto e imagem */
+    align-items: flex-start; /* Alinha itens pelo topo */
+    align-items: center;
+  }
+  
+  /* Texto das qualificações */
+  .qualifications-text {
+    flex: 2; /* Ocupa mais espaço que a imagem */
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* Imagem */
+  .qualifications-image {
+    flex: 1; /* Ocupa menos espaço que o texto */
+  }
+  
+  .qualifications-image img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Borda arredondada (opcional) */
+  }
+
+  /* FILTRAGEM */
+ /* Cards */
+.project-card {
+    border-radius: 10px;
+    /* padding: 15px; */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    max-width: 380px;  /* Largura máxima do card */
+    width: 100%;  /* Largura relativa para permitir que o card ocupe todo o espaço disponível até o máximo */
+    box-sizing: border-box;  /* Garante que o padding e borda sejam incluídos no cálculo da largura */  
+  }
+  
+  /* Cards ocultos */
+  .project-card.hidden {
+    display: none; /* Remove o card do layout completamente */
+  }
+  
+/* Caixa de pesquisa */
+.search-box {
+    width: 12.2rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    background: rgba(217, 217, 217, 0.1);
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  
+  /* Estilo padrão do select */
+.category-select {
+    background-color: rgba(217, 217, 217, 0.1); /* Cor de fundo */
+    color: #757575; 
+    padding: 10px; 
+    border-radius: 5px;
+    font-size: 16px;
+    width: 13.6rem;
+    border: 1px solid #fff;
+  }
+  
+  /* Estilo quando o select já tem um valor selecionado */
+  .category-select:focus {
+    background-color: #16192c; /* Manter a cor de fundo */
+    outline: none; /* Remove o contorno padrão */
+  }
+
+/* EXPERIÊNCIAS */
+  .clearfix{ clear:both; }
+
+  .timeline{
+      position: relative;
+      box-sizing: border-box;
+  }
+  .timeline::before{
+      content:'';
+      position: absolute;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background-color: #c5c5c5;
+  }
+  .timeline ul{
+      margin: 0;
+      padding: 0;
+  }
+  .timeline ul li{
+      position: relative;
+      width: 50%;
+      list-style: none;
+      box-sizing: border-box;
+      padding: 0px 40px 30px 40px;
+  }
+  .timeline ul li:nth-child(odd){
+      float: left;
+      text-align: right;
+      clear: both;
+  }
+  .timeline ul li:nth-child(odd) .time h4,
+  .timeline ul li:nth-child(even) .time h4{
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+  }
+  .timeline ul li:nth-child(even){
+      float: right;
+      text-align: left;
+      clear: both;
+  }
+  .content{
+      padding-bottom: 20px;
+  }
+  .timeline ul li:nth-child(odd)::before{
+      content:'';
+      position: absolute;
+      top: 24px;
+      right: -11px;
+      width: 20px;
+      height: 20px;
+      background: #9747FF;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(233,33,99,.2);
+  }
+  .timeline ul li:nth-child(even)::before{
+      content:'';
+      position: absolute;
+      top: 24px;
+      left: -9px;
+      width: 20px;
+      height: 20px;
+      background: #9747FF;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(233,33,99,.2);
+  }
+  .timeline ul li p{
+      margin: 10px 0 0;
+      padding: 0;
+  }
+  .timeline ul li:nth-child(odd) .time{
+      position: absolute;
+      top: 12px;
+      right: -175px;
+      margin: 0;
+      padding: 8px 16px;
+      background: #9747FF;
+      color: #fff;
+      border-radius: 18px;
+      box-shadow: 0 0 3px rgba(233,33,99,.3);
+  }
+  .timeline ul li:nth-child(even) .time{
+      position: absolute;
+      top: 12px;
+      left: -150px;
+      margin: 0;
+      padding: 8px 16px;
+      background: #9747FF;
+      color: #fff;
+      border-radius: 18px;
+      box-shadow: 0 0 3px rgba(233, 33, 99, .3);
+  }
+  h1{
+      text-align: center;
+      font-size: 60px;
+  }
+  
+  /* Oculta projetos a partir do 4º */
+.project-card.hidden {
+    display: none;
+  }
+  
+  .skills-container {
+    flex-wrap: wrap;
+  }
+  
+  .skills-container2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill-group {
+    flex: 1 1 calc(33.333% - 40px); /* Responsivo: 3 colunas em desktop */
+    max-width: calc(33.333% - 40px);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  
+  .skill-group span {
+    align-items: center;
+  }
+  
+  .skill-group img.icone {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaço entre os cards */
+    padding: 20px 0;
+  }
+  
+
+  /* Responsividade */
+@media (max-width: 1100px) {
+
+    .skills, .projects, .qualifications, .experiences, .contact {
+        padding: 2rem 3rem;
+    }
+
+    .navbar ul.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        gap: 1rem;
+    }
+
+    .theme-toggle {
+        margin: 2;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 480px) { /* Ajusta para telas muito pequenas (ex.: celulares) */
+    .hero .avatar {
+        width: 260px; /* Reduz o tamanho do avatar */
+        height: 260px;
+    }
+
+    .apresentacao {
+        font-size: 2.5rem; /* Reduz ainda mais o texto */
+    }
+}
+
+  /* Responsividade */
+  @media (max-width: 768px) { /* Aplica para dispositivos menores que 768px */
+    .hero-content {
+        flex-direction: column; /* Altera para coluna (avatar em cima do texto) */
+        align-items: center; /* Centraliza os elementos */
+        gap: 1.5rem; /* Reduz o espaçamento entre os elementos */
+        margin-bottom: 2rem;
+    }
+
+    .hero .avatar {
+        margin-right: 0; /* Remove o espaçamento lateral */
+    }
+
+    .apresentacao {
+        font-size: 3rem; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .hero {
+        padding: 2rem 1rem; /* Reduz o padding lateral para telas menores */
+        text-align: center; /* Para centralizar os elementos em telas menores */
+    }
+
+    .qualifications-container {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .qualifications-image {
+        margin-top: 20px; /* Adiciona espaço acima da imagem */
+    }
+
+    .skill-group {
+        max-width: calc(50% - 20px);
+      }
+  
+    .content{
+          margin-left: 30px;
+      }
+  
+    .hero {
+        padding: 10rem 3rem 4rem 3rem;
+      }
+
+      .menu-toggle {
+        display: flex;
+    }
+}
+
+@media (min-width:1100px){
+    .skills, .projects, .qualifications, .experiences, .contact {
+        padding: 2rem 10rem;
+        align-items: center;
+    }
+
+    .hero{
+        padding: 15rem 15rem 5rem 11rem;
+    }
+}
+
+@media (max-width:1000px){
+    .timeline{
+        width: 100%;
+    }
+}
+
+@media (max-width:767px){
+    h1{
+        text-align: center;
+        font-size: 40px;
+        padding: 0 20px;
+    }
+    .timeline{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .timeline::before{
+        top: 0;
+        left: 20px;
+    }
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even){
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+        padding-bottom: 50px;
+    }
+    .timeline ul li:nth-child(odd)::before,
+    .timeline ul li:nth-child(even)::before{
+        top: -18px;
+        left: 11px;
+    }
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time{
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+}
+
+  @media (max-width: 480px) {
+    .skill-group {
+      flex: 1 1 100%; /* Responsivo: 1 coluna em celulares */
+      max-width: 100%;
+    }
+  }
+  
+  #no-results-message {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
